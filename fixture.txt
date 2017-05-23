@@ -1,0 +1,1 @@
+[{"key":"trade:currency","displayName":"Currency"},{"key":"trade:trader","displayName":"Trader","resourceType":"user"}]
