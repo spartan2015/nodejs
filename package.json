@@ -1,0 +1,51 @@
+{
+  "author": {
+    "name": "Me",
+    "email": "mikeal.rogers@gmail.com",
+    "url": "http://www.futurealoof.com"
+  },
+  "name": "learning-node-js",
+  "description": "",
+  "version": "0.6.0",
+  "repository": {
+    "url": "git+https://github.com/spartan2015/nodejs.git"
+  },
+  "license": "GPL v.3",
+  "main": "index.js",
+  "dependencies": {
+    "request" : ">=2.1.0"
+    "events" : "*"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "gitHead": "",
+  "bugs": {
+    "url": "https://github.com/spartan2015/nodejs/issues"
+  },
+  "homepage": "https://github.com/spartan2015/nodejs#readme",
+  "_id": "aws-sign2@0.6.0",
+  "scripts": {},
+  "_shasum": "",
+  "_from": "aws-sign2@>=0.6.0 <0.7.0",
+  "_npmVersion": "2.14.4",
+  "_nodeVersion": "4.1.2",
+  "_npmUser": {
+    "name": "spartan2015",
+    "email": "mikeal.rogers@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "mikeal",
+      "email": "mikeal.rogers@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "",
+    "tarball": "https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.6.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.6.0.tgz"
+}
