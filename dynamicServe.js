@@ -2,7 +2,7 @@ var http = require("http"), fs = require('fs');
 var counter = 0;
 http.createServer(function(req,res){
    res.writeHead(200,{"Content-Type" :"application/json"
-   ,"Access-Control-Allow-Origin" :"http://localhost:3000"
+   ,"Access-Control-Allow-Origin" :"http://localhost:3333"
    ,"Access-Control-Allow-Credentials" :"true"
    ,"Access-Control-Allow-Headers" :"Access-Token,Content-Type"
    ,"Access-Control-Allow-Access-Token" :"true"
