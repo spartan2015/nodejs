@@ -1,0 +1,28 @@
+echo "pub-npm: publish on private registry"
+alias pub-npm="npm publish --registry http://fr1csluxp0003:4873 --force --tag latest"
+echo "unpub-npm: publish on private registry"
+alias unpub-npm="npm unpublish --registry http://fr1csluxp0003:4873 --force"
+
+--force --tag latest
+
+echo "pub-ui"
+alias pub-ui="cd /c/dev/git && sh publish-ui.sh"
+
+echo "unpub-ui"
+alias unpub-ui="cd /C/dev/my-git/nodejs && node npm-remove.js"
+
+
+npm show $1 versions --registry http://fr1csluxp0003:4873
+
+
+npm update
+
+npm prune
+
+npm start
+
+npm owner ls @fabric-fs-refapp/refapp-ui-config
+
+npm bugs @fabric-fs-refapp/refapp-ui-config
+
+node node_modules/.bin/mb-distify
