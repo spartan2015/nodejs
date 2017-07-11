@@ -1,3 +1,5 @@
+npm config set registry http://fr1csluxp0003:4873/
+
 echo "pub-npm: publish on private registry"
 alias pub-npm="npm publish --registry http://fr1csluxp0003:4873 --force --tag latest"
 echo "unpub-npm: publish on private registry"
@@ -26,3 +28,20 @@ npm owner ls @fabric-fs-refapp/refapp-ui-config
 npm bugs @fabric-fs-refapp/refapp-ui-config
 
 node node_modules/.bin/mb-distify
+
+bundled dependencies = u basically tell npm to get that dependecy (that could also be found in npm) from our (tarball) package directly and skip fetching it via npm
+- but it isn't a mechanism for publishing multiple packages under npm and then to hope referencing the bundled one - NOPE
+Avoid them
+
+bundled dependencies declaration - when they are with the app
+
+"dependencies": {
+    "@fabric-fs-refapp/refapp-ui-config/refapp_tradereport" : "file:../refapp_tradereport"
+  },
+  "bundleDependencies": [
+    "@fabric-fs-refapp/refapp-ui-config/refapp_tradereport"
+  ],
+yeah, the folder name must match - bundled dependency name == folder name of the dependency
+
+then run publish
+then declare as dep - run npm install - will work
