@@ -4,7 +4,7 @@ function puts(error, stdout, stderr) {
     sys.puts(stdout)
 }
 
-['@fabric-fs-refapp/refapp-ui-config','@fabric-fs-refapp/fsrefapp.tradereport','@store/tradeperimeter','@store/currentdraftcontext'].forEach(function (package) {
+['grunt'].forEach(function (package) {
     console.log("npm show " + package + " versions");
     exec("npm show " + package + " versions --registry http://fr1csluxp0003:4873",
         function (error, stdout, stderr) {

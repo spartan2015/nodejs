@@ -5,6 +5,8 @@ alias pub-npm="npm publish --registry http://fr1csluxp0003:4873 --force --tag la
 echo "unpub-npm: publish on private registry"
 alias unpub-npm="npm unpublish --registry http://fr1csluxp0003:4873 --force"
 
+npm cache clean
+
 --force --tag latest
 
 echo "pub-ui"
@@ -14,7 +16,10 @@ echo "unpub-ui"
 alias unpub-ui="cd /C/dev/my-git/nodejs && node npm-remove.js"
 
 
+show-npm(){
 npm show $1 versions --registry http://fr1csluxp0003:4873
+}
+
 
 
 npm update
@@ -23,9 +28,9 @@ npm prune
 
 npm start
 
-npm owner ls @fabric-fs-refapp/refapp-ui-config
+npm owner ls @uxp/a
 
-npm bugs @fabric-fs-refapp/refapp-ui-config
+npm bugs @uxp/a
 
 node node_modules/.bin/mb-distify
 
@@ -36,10 +41,10 @@ Avoid them
 bundled dependencies declaration - when they are with the app
 
 "dependencies": {
-    "@fabric-fs-refapp/refapp-ui-config/refapp_tradereport" : "file:../refapp_tradereport"
+    "x" : "file:../y"
   },
   "bundleDependencies": [
-    "@fabric-fs-refapp/refapp-ui-config/refapp_tradereport"
+    "x"
   ],
 yeah, the folder name must match - bundled dependency name == folder name of the dependency
 
